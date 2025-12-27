@@ -1,4 +1,4 @@
-# Ipywidgets Support
+# IPywidgets Support
 
 This section describes how [ipywidgets](https://ipywidgets.readthedocs.io/) support is
 implemented in JupyterLite and how interactive widgets work in the browser.
@@ -29,7 +29,7 @@ flowchart LR
             M --- WM[Widget Manager]
             WM --- V[Widget Views]
         end
-        subgraph webworker
+        subgraph web worker
             direction TB
             K[Kernel]
             K --- IW[ipywidgets]
@@ -98,7 +98,7 @@ sequenceDiagram
     M->>V: Update view
 ```
 
-## Setting up Ipywidgets
+## Setting up IPywidgets
 
 ### With the Pyodide Kernel
 
@@ -171,7 +171,7 @@ While ipywidgets support works well in JupyterLite, there are some consideration
 
 ## Further Reading
 
-- [Ipywidgets Documentation](https://ipywidgets.readthedocs.io/)
+- [IPywidgets Documentation](https://ipywidgets.readthedocs.io/)
 - [Adding Extensions](../howto/configure/simple_extensions.md)
 - [Pyodide Kernel Configuration](../howto/pyodide/packages.md)
 - [Xeus Python Pre-installed Packages](../howto/xeus-python/preinstalled_packages.md)
