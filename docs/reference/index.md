@@ -14,6 +14,7 @@ cli
 api/index
 architecture
 contents
+ipywidgets
 doit
 demo
 ```
