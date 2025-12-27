@@ -151,7 +151,7 @@ These libraries require:
 1. **A federated JupyterLab extension**: For rendering the custom widgets in the browser.
 2. **A Python package**: For the kernel-side widget implementation.
 
-See [](../howto/configure/simple_extensions.md) for details on adding widget
+See [the extensions configuration guide](../howto/configure/simple_extensions.md) for details on adding widget
 libraries to your JupyterLite deployment.
 
 ## Limitations
@@ -163,8 +163,8 @@ While ipywidgets support works well in JupyterLite, there are some consideration
 
 - **Version Compatibility**: The frontend extension version must be compatible with the
   Python package version installed at runtime. See
-  [](../howto/configure/simple_extensions.md#avoid-the-drift-of-versions-between-the-frontend-extension-and-the-python-package)
-  for strategies to manage version compatibility.
+  [version management strategies](../howto/configure/simple_extensions.md#avoid-the-drift-of-versions-between-the-frontend-extension-and-the-python-package)
+  for guidance on managing version compatibility.
 
 - **Package Availability**: Not all Python packages are available for Pyodide or
   emscripten-forge. Check the respective package indexes for availability.
